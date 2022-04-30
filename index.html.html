@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:5500/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+<link rel="stylesheet" href="./Frontend Mentor _ Huddle landing page with single introductory section_files/huddle.css">
+<link rel="stylesheet" href="./Frontend Mentor _ Huddle landing page with single introductory section_files/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="logo">
+    <img src="./Frontend Mentor _ Huddle landing page with single introductory section_files/logo.svg" alt="">
+    </div>
+    <div class="images">
+      <img src="./Frontend Mentor _ Huddle landing page with single introductory section_files/illustration-mockups.svg" alt="">
+    <div class="content">
+      <h2> Build The Community<br> Your Fans Will Love</h2>
+    <p>Huddle re-imagines the way we build communities. You have<br> a voice, but so does your audience. 
+      Create connections with<br> your users as you engage in genuine discussion. 
+    </p>
+    <a href="http://127.0.0.1:5500/index.html#">Register</a>
+    </div>
+    </div>
+    <div class="socials">
+      <a href="http://127.0.0.1:5500/index.html#">
+      <i class=" fa fa-facebook"></i>
+      </a>
+      <a href="http://127.0.0.1:5500/index.html#">
+      <i class=" fa fa-twitter"></i>
+      </a>
+      <a href="http://127.0.0.1:5500/index.html#">
+      <i class=" fa fa-instagram"></i>
+     </a>
+    </div>
+  </div>
+</div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
